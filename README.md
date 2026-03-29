@@ -331,10 +331,15 @@ A custom inline policy is attached directly to the Lambda execution role with tw
 ### ![s6](https://img.shields.io/badge/06-Test%20Manually%20–%20CloudWatch%20Logs-7B61FF?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 **What is CloudWatch?**
-Amazon CloudWatch is AWS's monitoring and observability service. Every `print()` statement in a Lambda function is automatically captured and stored in CloudWatch Logs — giving you a full trace of every execution: which emails were sent, which failed, and any errors that occurred.
+Amazon CloudWatch is AWS's monitoring and observability service. Every `print()` statement in a Lambda function is automatically captured and stored in CloudWatch Logs — giving you a full trace of every execution: which emails were sent, which failed, and any errors that occurred.<div align="center">
+  <img src="src/monitor.png" alt="Logo" width="100%" height="100%">
+</div>
 
 **Why test manually first?**
 Before letting EventBridge fire the function automatically every week, run it once manually to confirm emails are delivering correctly, the CSV is parsing as expected, and CloudWatch shows clean logs with no errors.
+<div align="center">
+  <img src="src/test.png" alt="Logo" width="100%" height="100%">
+</div>
 
 **How it's used here:**
 Every email send is logged with the recipient address and SES Message ID. Any exception is also logged. CloudWatch keeps this history for 30 days by default.
