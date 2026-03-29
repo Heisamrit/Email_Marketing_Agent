@@ -177,10 +177,10 @@ GoDaddy Dashboard → My Products → DNS → Add Records
 ---
 
 <div align="center">
-  <img src="src/GD1.png" alt="Logo" width="100%" height="100%">
+  <img src="src/GD2.png" alt="Logo" width="100%" height="100%">
 </div>
 <div align="center">
-  <img src="src/GD2.png" alt="Logo" width="100%" height="100%">
+  <img src="src/GD1.png" alt="Logo" width="100%" height="100%">
 </div>
 <div align="center">
   <img src="src/GD3.png" alt="Logo" width="100%" height="100%">
@@ -211,6 +211,13 @@ Lambda is the brain of the entire pipeline. It reads both files from S3, loops t
 
 **Setup:** Lambda → Create function → **Python 3.12** → Paste code → Deploy
 Then: Configuration → General → set **Timeout: 5 min** | **Memory: 128 MB**
+
+<div align="center">
+  <img src="src/function.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/function2.png" alt="Logo" width="100%" height="100%">
+</div>
 
 ```python
 import boto3, csv
