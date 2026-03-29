@@ -255,7 +255,12 @@ def lambda_handler(event, context):
 ```
 
 > 💡 `raise` on the last line is important — without it, Lambda reports the invocation as successful even when an error occurred, making failures invisible in CloudWatch.
-
+<div align="center">
+  <img src="src/event.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/event2.png" alt="Logo" width="100%" height="100%">
+</div>
 ---
 
 ### ![s5](https://img.shields.io/badge/05-AWS%20IAM%20–%20Permissions-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white)
