@@ -328,7 +328,7 @@ A custom inline policy is attached directly to the Lambda execution role with tw
 
 > 🔐 The S3 permission is scoped to only this specific bucket — Lambda cannot read any other bucket in your AWS account.
 <div align="center">
-  <img src="src/Deploy.png" alt="Logo" width="100%" height="100%">
+  <img src="src/Depoly.png" alt="Logo" width="100%" height="100%">
 </div>
 
 ---
@@ -425,7 +425,7 @@ Your pipeline is now fully automated. 🎉
 ```
 
 <div align="center">
-  <img src="src/Deploy.png" alt="Logo" width="100%" height="100%">
+  <img src="src/Depoly.png" alt="Logo" width="100%" height="100%">
 </div>
 <div align="center">
   <img src="src/test.png" alt="Logo" width="100%" height="100%">
