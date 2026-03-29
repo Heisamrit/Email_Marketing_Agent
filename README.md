@@ -91,10 +91,6 @@ SES integrates directly with Lambda via `boto3` — no external SMTP credentials
 SES sends a personalized HTML email to each contact using the verified sender address `noreply@sainicaraccessories.shop`.
 
 <div align="center">
-  <img src="src/ses.png" alt="Logo" width="100%" height="100%">
-</div>
-
-<div align="center">
   <img src="src/ses1.png" alt="Logo" width="100%" height="100%">
 </div>
 
@@ -122,12 +118,16 @@ AWS Console → Amazon SES → Verified Identities → Create Identity
   → Domain        : sainicaraccessories.shop
   → Create identity
 
+ <div align="center">
+  <img src="src/ses.png" alt="Logo" width="100%" height="100%">
+</div>
+
 AWS gives you DNS records → add them to GoDaddy (see Step 03)
 
 To go live:
   → SES → Account Dashboard → Request production access
   → Describe your use case → AWS approves within 24–48 hours ✅
-```
+
 
 > 📌 Always include an **unsubscribe notice** in your email footer — SES can suspend accounts with high complaint rates.
 
@@ -146,11 +146,12 @@ GoDaddy is the domain registrar for `sainicaraccessories.shop`. The DNS records 
 | **DKIM** | `CNAME` | Adds a cryptographic digital signature to every outgoing email — proving it hasn't been tampered with |
 | **DMARC** | `TXT` | Tells receiving mail servers what to do if SPF or DKIM checks fail (monitor, quarantine, or reject) |
 
+
 **How it's used here:**
 When SES verifies your domain, it provides the exact DNS values to add. These go directly into GoDaddy's DNS manager.
 
 **Setup:**
-```
+
 GoDaddy Dashboard → My Products → DNS → Add Records
 
   1. SPF
@@ -169,11 +170,24 @@ GoDaddy Dashboard → My Products → DNS → Add Records
      Name  : _dmarc
      Value : v=DMARC1; p=none; rua=mailto:admin@sainicaraccessories.shop
      TTL   : 1 hour
-```
+
 
 > ⏳ DNS changes can take up to 72 hours to propagate globally, though usually it's within a few hours.
 
 ---
+
+<div align="center">
+  <img src="src/GD1.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/GD2.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/GD3.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/GD4.png" alt="Logo" width="100%" height="100%">
+</div>
 
 ### ![s4](https://img.shields.io/badge/04-AWS%20Lambda%20–%20Serverless%20Logic-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
 
