@@ -11,7 +11,6 @@
 ![EventBridge](https://img.shields.io/badge/EventBridge-E7157B?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![IAM](https://img.shields.io/badge/AWS%20IAM-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![GoDaddy](https://img.shields.io/badge/GoDaddy-1BDBDB?style=for-the-badge&logo=godaddy&logoColor=white)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 <br/>
 
@@ -426,7 +425,7 @@ Your pipeline is now fully automated. 🎉
 ```
 
 <div align="center">
-  <img src="src/deploy.png" alt="Logo" width="100%" height="100%">
+  <img src="src/Deploy.png" alt="Logo" width="100%" height="100%">
 </div>
 <div align="center">
   <img src="src/test.png" alt="Logo" width="100%" height="100%">
