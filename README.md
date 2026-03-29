@@ -20,6 +20,9 @@
 ![Architecture](https://img.shields.io/badge/☁️-100%25%20Serverless-ce93d8?style=flat-square&labelColor=4a148c)
 ![Emails](https://img.shields.io/badge/📧%20Delivery-Amazon%20SES-FF4F00?style=flat-square&labelColor=232F3E)
 ![Monitoring](https://img.shields.io/badge/📊%20Logs-CloudWatch-FF4F8B?style=flat-square&labelColor=7b1fa2)
+<div align="center">
+  <img src="src/sucess.png" alt="Logo" width="100%" height="100%">
+</div>
 
 <br/><br/>
 
@@ -325,6 +328,9 @@ A custom inline policy is attached directly to the Lambda execution role with tw
 ```
 
 > 🔐 The S3 permission is scoped to only this specific bucket — Lambda cannot read any other bucket in your AWS account.
+<div align="center">
+  <img src="src/Deploy.png" alt="Logo" width="100%" height="100%">
+</div>
 
 ---
 
@@ -418,54 +424,16 @@ AWS Console → Amazon EventBridge → Rules → Create rule
 
 Your pipeline is now fully automated. 🎉
 ```
-
+<div align="center">
+  <img src="src/test.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/sucess.png" alt="Logo" width="100%" height="100%">
+</div>
 > ⏰ All EventBridge times are **UTC**. India (IST) is UTC+5:30 — so `9 AM UTC` = `2:30 PM IST`.
 
 ---
 
-## ⚠️ Common Pitfalls
-
-| ❌ Problem | 🔍 Likely Cause | ✅ Fix |
-|:---|:---|:---|
-| `Email address not verified` | SES still in sandbox mode | Verify recipient in SES or request production access |
-| `AccessDenied` on S3 | IAM policy bucket name mismatch | Check the ARN — bucket name must match exactly, character for character |
-| `AccessDenied` on SES | Missing `ses:SendEmail` in IAM | Re-attach the IAM policy with SES permissions |
-| Emails land in spam | SPF / DKIM / DMARC missing | Add all 3 DNS records in GoDaddy and wait for propagation |
-| Lambda times out | Too many contacts, timeout too short | Increase Lambda timeout to 10–15 min in Configuration |
-| `KeyError: 'FirstName'` | Wrong CSV column header | Header must be exactly `FirstName` — case-sensitive |
-| `UnicodeDecodeError` | CSV saved in Windows encoding | Re-save as UTF-8 without BOM in VS Code or Notepad++ |
-| No logs in CloudWatch | Lambda never ran | Check EventBridge rule is **enabled** and target is correct |
-
----
-
-## 💰 Cost Estimate
-
-| Service | Usage | Monthly Cost |
-|:---|:---|:---:|
-| AWS Lambda | 1–4 invocations/month | **Free** (1M free tier) |
-| Amazon S3 | 2 files, ~50 KB | **~$0.00** |
-| Amazon SES | ~500 emails/month | **~$0.05** |
-| EventBridge | 1 rule, weekly trigger | **Free** |
-| CloudWatch Logs | Lambda execution logs | **Free** (5 GB free tier) |
-| AWS IAM | 1 role, 1 policy | **Free** |
-| GoDaddy Domain | `sainicaraccessories.shop` | **~$1.00** |
-| **Total** | | **~$1.05/month** |
-
-> The entire AWS infrastructure runs within the **free tier**. The only real cost is the GoDaddy domain registration.
-
----
-
-## 📈 Future Improvements
-
-- [ ] 📊 **Open & Click Tracking** — SES Configuration Sets + SNS for engagement metrics
-- [ ] 🔕 **Unsubscribe Handling** — One-click unsubscribe link + auto-remove from contacts.csv
-- [ ] 📋 **DynamoDB Backend** — Replace CSV with a NoSQL database for scalable subscriber management
-- [ ] 🔔 **Failure Alerts** — CloudWatch Alarm → SNS → email/SMS when Lambda errors out
-- [ ] 📬 **Bounce Handling** — SES feedback loop to auto-remove hard bounces from the list
-- [ ] 📎 **Attachments** — Use `send_raw_email` to include PDF or image attachments
-- [ ] 🖥️ **Admin Dashboard** — Web UI to manage contacts and preview the email before sending
-
----
 
 ## 🏗️ Architecture
 
