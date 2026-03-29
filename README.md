@@ -373,6 +373,22 @@ Expected output:
 **What is EventBridge?**
 Amazon EventBridge is a serverless event bus and scheduler. Think of it as AWS's native cron system — it can fire events (trigger Lambda, call APIs, start workflows) on any schedule you define. No cron server. No EC2 instance running 24/7 just to run a schedule. It's completely managed, highly reliable, and free for standard usage.
 
+<div align="center">
+  <img src="src/bridge.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/bridge2.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/bridge3.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/bridge4.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/bridge5.png" alt="Logo" width="100%" height="100%">
+</div>
+
 **Why EventBridge for this project?**
 Without EventBridge, someone would have to manually click "Test" in Lambda every week. EventBridge removes that human dependency entirely. The moment the rule is enabled, the system runs forever on schedule — even if you never open the AWS console again.
 
