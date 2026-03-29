@@ -21,7 +21,7 @@
 ![Emails](https://img.shields.io/badge/📧%20Delivery-Amazon%20SES-FF4F00?style=flat-square&labelColor=232F3E)
 ![Monitoring](https://img.shields.io/badge/📊%20Logs-CloudWatch-FF4F8B?style=flat-square&labelColor=7b1fa2)
 <div align="center">
-  <img src="src/sucess.png" alt="Logo" width="100%" height="100%">
+  <img src="src/email.png" alt="Logo" width="100%" height="100%">
 </div>
 
 <br/><br/>
@@ -424,11 +424,15 @@ AWS Console → Amazon EventBridge → Rules → Create rule
 
 Your pipeline is now fully automated. 🎉
 ```
+
+<div align="center">
+  <img src="src/deploy.png" alt="Logo" width="100%" height="100%">
+</div>
 <div align="center">
   <img src="src/test.png" alt="Logo" width="100%" height="100%">
 </div>
 <div align="center">
-  <img src="src/sucess.png" alt="Logo" width="100%" height="100%">
+  <img src="src/email.png" alt="Logo" width="100%" height="100%">
 </div>
 > ⏰ All EventBridge times are **UTC**. India (IST) is UTC+5:30 — so `9 AM UTC` = `2:30 PM IST`.
 
@@ -463,9 +467,6 @@ Your pipeline is now fully automated. 🎉
 <div align="center">
 
 **Amrit Saini**
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/)
 
 *⭐ Star this repo if it helped you!*
 
