@@ -40,32 +40,7 @@
 
 ---
 
-## 📌 Table of Contents
 
-| # | Section |
-|:---:|:---|
-| 1 | [✨ What This Project Does](#-what-this-project-does) |
-| 2 | [🏗️ Full Architecture Diagram](#-full-architecture-diagram) |
-| 3 | [🔵 Service Deep-Dive: Amazon S3](#-service-deep-dive-amazon-s3) |
-| 4 | [🟠 Service Deep-Dive: AWS Lambda](#-service-deep-dive-aws-lambda) |
-| 5 | [📧 Service Deep-Dive: Amazon SES](#-service-deep-dive-amazon-ses) |
-| 6 | [🩷 Service Deep-Dive: Amazon EventBridge](#-service-deep-dive-amazon-eventbridge) |
-| 7 | [🔴 Service Deep-Dive: AWS IAM](#-service-deep-dive-aws-iam) |
-| 8 | [🌐 Service Deep-Dive: GoDaddy DNS](#-service-deep-dive-godaddy-dns) |
-| 9 | [📁 Project File Structure](#-project-file-structure) |
-| 10 | [📄 contacts.csv — Subscriber List](#-contactscsv--subscriber-list) |
-| 11 | [✉️ email_template.html — Email Design](#-email_templatehtml--email-design) |
-| 12 | [⚙️ Lambda Function — Full Code](#-lambda-function--full-code) |
-| 13 | [🔐 IAM Policy — Permissions](#-iam-policy--permissions) |
-| 14 | [🧪 Test Event — Manual Trigger](#-test-event--manual-trigger) |
-| 15 | [🕐 EventBridge — Scheduling](#-eventbridge--scheduling) |
-| 16 | [🚀 Step-by-Step Deployment Guide](#-step-by-step-deployment-guide) |
-| 17 | [⚠️ Troubleshooting & Common Pitfalls](#-troubleshooting--common-pitfalls) |
-| 18 | [💰 Cost Breakdown](#-cost-breakdown) |
-| 19 | [📈 Roadmap & Future Improvements](#-roadmap--future-improvements) |
-| 20 | [👤 Author](#-author) |
-
----
 
 ## ✨ What This Project Does
 
@@ -914,13 +889,6 @@ Your system is now fully live and automated! 🎉
 
 *Built as a real-world serverless project demonstrating AWS automation at zero server cost.*
 
-<br/>
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](#)
-
-<br/>
 
 </div>
 
