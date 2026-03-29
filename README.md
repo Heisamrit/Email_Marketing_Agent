@@ -268,6 +268,10 @@ def lambda_handler(event, context):
 **What is IAM?**
 AWS IAM (Identity and Access Management) is the security layer that controls *who can do what* inside your AWS account. Every Lambda function runs under an IAM **Role** — a set of permissions that defines exactly which AWS services and resources it can interact with. By default, a new Lambda role has zero access to anything.
 
+<div align="center">
+  <img src="src/iam.png" alt="Logo" width="100%" height="100%">
+</div>
+
 **Why a custom IAM policy?**
 Without the custom policy, Lambda would get `AccessDenied` the moment it tries to read from S3 or call SES. The policy grants the minimum permissions needed — nothing more — following the **Principle of Least Privilege**. This limits damage if credentials are ever compromised.
 
@@ -276,6 +280,18 @@ A custom inline policy is attached directly to the Lambda execution role with tw
 - Read objects from the `mail-agent-heisamrit` S3 bucket
 - Send emails via SES
 
+<div align="center">
+  <img src="src/policy.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/policy2.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/policy3.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/policy4.png" alt="Logo" width="100%" height="100%">
+</div>
 **What's granted vs. blocked:**
 
 | Permission | Granted | Reason |
