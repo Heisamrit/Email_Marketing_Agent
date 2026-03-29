@@ -55,7 +55,9 @@ Create a bucket named `mail-agent-heisamrit` and upload these two files:
  ┣ 📄 contacts.csv          →  Subscriber list (FirstName + Email columns)
  ┗ 📄 email_template.html   →  Styled HTML email with {{FirstName}} placeholder
 ```
-
+<div align="center">
+  <img src="src/s3u.png" alt="Logo" width="100%" height="100%">
+</div>
 **contacts.csv format:**
 ```csv
 FirstName,Email
@@ -88,6 +90,17 @@ SES integrates directly with Lambda via `boto3` — no external SMTP credentials
 **How it's used here:**
 SES sends a personalized HTML email to each contact using the verified sender address `noreply@sainicaraccessories.shop`.
 
+<div align="center">
+  <img src="src/ses.png" alt="Logo" width="100%" height="100%">
+</div>
+
+<div align="center">
+  <img src="src/ses1.png" alt="Logo" width="100%" height="100%">
+</div>
+
+<div align="center">
+  <img src="src/ses2.png" alt="Logo" width="100%" height="100%">
+</div>
 **SES Modes:**
 
 | Mode | Who Can Receive | Daily Limit | How to Upgrade |
@@ -95,6 +108,13 @@ SES sends a personalized HTML email to each contact using the verified sender ad
 | **Sandbox** (default) | Verified email addresses only | 200/day | Request production access |
 | **Production** | Any email address | Custom quota | Approved by AWS (24–48 hrs) |
 
+
+<div align="center">
+  <img src="src/ses3.png" alt="Logo" width="100%" height="100%">
+</div>
+<div align="center">
+  <img src="src/ses4.png" alt="Logo" width="100%" height="100%">
+</div>
 **Setup:**
 ```
 AWS Console → Amazon SES → Verified Identities → Create Identity
